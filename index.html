@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>FREE 15K GRATIS -Promo terbaru </title>
+  <title>FREE 15K GRATIS - Promo Terbaru</title>
   <meta name="description" content="FREE 15K GRATIS buat member baru! Download APK sekarang. Main angka bisa 10 perak. Cari di Google: YOWESJP" />
 
   <style>
@@ -46,17 +46,20 @@
       backdrop-filter: blur(8px);
       position: relative;
       overflow: hidden;
+      z-index: 1;
     }
 
     .card::before {
       content: "";
       position: absolute;
-      top: -100px; left: -100px;
+      top: -100px; 
+      left: -100px;
       width: 200%;
       height: 200%;
       background: linear-gradient(120deg, transparent, rgba(255,0,255,0.1), transparent);
       transform: rotate(15deg);
       animation: glowMove 6s linear infinite;
+      pointer-events: none; /* ✅ mencegah blokir klik tombol */
     }
 
     @keyframes glowMove {
